@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overscroll-behavior-y: contain;
+  -webkit-user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+canvas {
+  display: block;
+}
+
+#parameters {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  transform-origin: bottom center;
+  transition: all 1.2s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 7vh 10vw;
+  gap: 2.5vh;
+  background-image: url("img/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  font-family: 'Geist Mono';
+  color: #0043FF;
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+#selectcontainer {
+  background-color: white;
+  padding: 0vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  border-radius: 4px;
+}
+
+#buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: 'Host Grotesk';
+  font-size: 1.8vh;
+  color: rgb(1 0 42 / 50%);
+}
+
+.active {
+  background-color: #405CFF;
+  color: white;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.colorRec {
+  width: 4vh;
+  height: 4vh;
+  background-color: var(--colorRec);
+}
+
+.icon {
+  width: 47px;
+  height: 47px;
+}
+
+.text {
+  font-family: 'Host Grotesk';
+  font-size: 2vh;
+  font-weight: 400;
+  color: #070464;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #E6EBFF;
+}
+
+#legend2 {
+  display: none;
+}
+
+#aprovebutton {
+  background-color: #0043FF;
+  display: flex;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Host grotesk';
+  font-size: 2vh;
+  color: white;
+  font-weight: 500;
+}
+
+#parametersbutton {
+  z-index: 19;
+  position: absolute;
+  top: 85vh;
+  right: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #405CFF;
+  padding: 4px;
+  border-radius: 50%;
+}
