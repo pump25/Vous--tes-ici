@@ -1,0 +1,61 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --blue: #0043FF;
+  --orange: #FF6B09;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+#title{
+  justify-content: center;
+  text-align: center;
+  font-family:'Host Grotesk';
+  color: white;
+  font-weight: 300;
+}
+
+#background{
+  width:100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#linkcontainer{
+  display:flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.link{
+  font-family: 'Host Grotesk';
+  color: var(--blue);
+  background-color: white;
+  padding: 10px;
+  border-radius: 0.5vw;
+  font-size: 2.5vw;
+}
